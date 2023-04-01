@@ -42,21 +42,13 @@ If the logo is not found, the function prints a message indicating that the inpu
 Here are the steps used in the code to match the templates:
 
 1.Load the template and input images using cv2.imread.
-
 2.Get the width and height of the templates using shape.
-
 3.Perform template matching using cv2.matchTemplate, which returns a matrix of correlation coefficients.
-
 4.Find the location in the input image where the maximum correlation coefficient occurs using cv2.minMaxLoc.
-
 5.Draw a rectangle around the template on the input image using cv2.rectangle.
-
 6.Extract the relevant information from the input image using Image.open and crop.
-
 7.Display the extracted images using display.
-
 8.Print a message indicating the status of the student ID verification.
-
 
 ### Note:
 The system assumes that the ID card image has a similar structure and format as the provided templates. Therefore, it may not work accurately for ID cards with different structures or formats.
